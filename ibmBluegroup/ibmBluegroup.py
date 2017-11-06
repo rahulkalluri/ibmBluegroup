@@ -6,14 +6,14 @@ from xml.dom.minidom import parse
 import xml.dom.minidom
 
 #author: guojial@cn.ibm.com
-#version: v1.01
+#version: v1.05
 #Date:   2017-10-27
 #Last Modified by: guojial@cn.ibm.com
-#Last Modified time: 2017-10-30
+#Last Modified time: 2017-11-04
 
 class ibmBluegroup:
 
-#check the user exsit in group
+	#check the user exsit in group
 	def userInGroup(self, intranetID, groupname):
 
 		http = httplib2.Http() 
