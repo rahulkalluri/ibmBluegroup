@@ -8,7 +8,7 @@ To install, use `pip`:
 pip install --upgrade ibmBluegroup
 ```
 
-Usage
+## Usage
 
 ```python
 from ibmBluegroup import ibmBluegroup
