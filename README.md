@@ -14,15 +14,23 @@ pip install --upgrade ibmBluegroup
 from ibmBluegroup import ibmBluegroup
 
 ibmBluegroup = ibmBluegroup()
-flag = ibmBluegroup.userInGroup("intrenetID", "group name")
+flag = ibmBluegroup.userInGroup("intranetID", "group name")
 print(flag)
 ```
 
-Tip: please use '%20' replace all blanks of group name.
+If your BlueGroup has spaces in the name, replace blanks with *%20* or *+*. 
+```python
+from ibmBluegroup import ibmBluegroup
 
+ibmBluegroup = ibmBluegroup()
+flag = ibmBluegroup.userInGroup("John.Doe@ibm.com", "Testing+Group")
+# OR
+# flag = ibmBluegroup.userInGroup("John.Doe@ibm.com", "Testing%20Group")
+print(flag)
+```
 ## Python Version
 
-Tested on: Python from 3.5.
+Tested on Python 3.5+.
 
 ## License
 
